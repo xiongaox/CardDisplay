@@ -1,24 +1,24 @@
 /* Font Definitions */
 @font-face {
-    font-family: 'Songti';
-    src: url('../fonts/Songti.ttc') format('truetype');
-    font-weight: 400;
+    font-family: 'Songti-SC-Black';
+    src: url('../fonts/Songti-SC-Black.ttf') format('truetype');
+    font-weight: 900;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'Songti';
-    src: url('../fonts/Songti.ttc') format('truetype');
+    font-family: 'Songti-SC-Bold';
+    src: url('../fonts/Songti-SC-Bold.ttf') format('truetype');
     font-weight: 700;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'Songti';
-    src: url('../fonts/Songti.ttc') format('truetype');
-    font-weight: 900;
+    font-family: 'Songti-SC-Regular';
+    src: url('../fonts/Songti-SC-Regular.ttf') format('truetype');
+    font-weight: 400;
     font-style: normal;
     font-display: swap;
 }
@@ -60,4 +60,22 @@
     font-weight: 400;
     font-style: italic;
     font-display: swap;
-} 
+}
+
+/* .quote-text {
+    font-family: 'Songti-SC-Black', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.author-name {
+    font-family: 'Songti-SC-Bold', sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.quote-source {
+    font-family: 'Songti-SC-Regular', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+} */

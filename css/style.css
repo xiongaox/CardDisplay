@@ -164,8 +164,7 @@ header h1::before {
 }
 
 .author-name {
-    font-weight: 700;
-    font-family: 'Songti', sans-serif;
+    font-family: 'Songti-SC-Bold', sans-serif;
     color: #2c3e50;
     margin-bottom: 0;
     margin-right: 0;         /* 移除右边距 */
@@ -173,9 +172,8 @@ header h1::before {
 
 .quote-source {
     font-size: 0.85rem;
-    font-family: 'Songti', sans-serif;
+    font-family: 'Songti-SC-Regular', sans-serif;
     font-style: normal;
     color: #7f8c8d;
-    font-weight: 400;
     margin-left: 0;          /* 移除左边距 */
 }
