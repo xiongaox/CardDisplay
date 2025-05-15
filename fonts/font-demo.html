@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>宋体字体演示</title>
+    <link rel="stylesheet" href="../css/fonts.css">
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        
+        h1 {
+            font-family: 'Songti', serif;
+            color: #4a4a8a;
+            margin-bottom: 30px;
+            font-weight: 900;
+        }
+        
+        .songti-regular {
+            font-family: 'Songti', sans-serif;
+            font-weight: 400;
+        }
+        
+        .songti-bold {
+            font-family: 'Songti', sans-serif;
+            font-weight: 700;
+        }
+        
+        .songti-black {
+            font-family: 'Songti', sans-serif;
+            font-weight: 900;
+        }
+        
+        .font-sample {
+            margin-bottom: 30px;
+            padding: 15px;
+            border-radius: 8px;
+            background-color: #f5f5f5;
+        }
+        
+        .font-name {
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        
+        .quote-example {
+            margin-top: 40px;
+            padding: 20px;
+            background-color: #f0f5ff;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        
+        .quote-example h2 {
+            font-family: 'Songti', serif;
+            margin-bottom: 20px;
+            color: #4a4a8a;
+        }
+        
+        .example-text {
+            font-family: 'Songti', serif;
+            font-weight: 900;
+            font-size: 1.1rem;
+            margin-bottom: 15px;
+            border-left: 3px solid #6b72fa;
+            padding-left: 15px;
+        }
+        
+        .example-author {
+            font-family: 'Songti', serif;
+            font-weight: 700;
+            color: #4a4a8a;
+        }
+        
+        .example-source {
+            font-family: 'Songti', serif;
+            font-weight: 400;
+            font-style: italic;
+            color: #777;
+            font-size: 0.85rem;
+        }
+    </style>
+</head>
+<body>
+    <h1>宋体字体演示</h1>
+    
+    <p>本页面展示网站中使用的宋体字体：</p>
+    
+    <div class="font-sample">
+        <div class="font-name">宋体 Regular (用于出处):</div>
+        <p class="songti-regular">人生若只如初见，何事秋风悲画扇。</p>
+        <p class="songti-regular">The quick brown fox jumps over the lazy dog.</p>
+    </div>
+    
+    <div class="font-sample">
+        <div class="font-name">宋体 Bold (用于作者):</div>
+        <p class="songti-bold">人生若只如初见，何事秋风悲画扇。</p>
+        <p class="songti-bold">The quick brown fox jumps over the lazy dog.</p>
+    </div>
+    
+    <div class="font-sample">
+        <div class="font-name">宋体 Black (用于文案):</div>
+        <p class="songti-black">人生若只如初见，何事秋风悲画扇。</p>
+        <p class="songti-black">The quick brown fox jumps over the lazy dog.</p>
+    </div>
+    
+    <div class="quote-example">
+        <h2>卡片示例</h2>
+        <p class="example-text">人生若只如初见，何事秋风悲画扇。等闲变却故人心，却道故人心易变。</p>
+        <p class="example-author">纳兰性德</p>
+        <p class="example-source">《木兰词·拟古决绝词柬友》</p>
+    </div>
+    
+    <p>在CSS中使用这些字体的方法：</p>
+    <pre>
+/* 文案 - 使用宋体 Black */
+font-family: 'Songti', serif;
+font-weight: 900;
+
+/* 作者 - 使用宋体 Bold */
+font-family: 'Songti', serif;
+font-weight: 700;
+
+/* 出处 - 使用宋体 Regular */
+font-family: 'Songti', serif;
+font-weight: 400;
+    </pre>
+</body>
+</html> 

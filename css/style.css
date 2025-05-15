@@ -1,0 +1,181 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Songti', 'Montserrat', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #F3F4F6;
+    background-image: none;
+    color: #333;
+    min-height: 100vh;
+    padding: 2rem;
+}
+
+.container {
+    max-width: 1400px;  /* 从1200px改为1400px */
+    margin: 0 auto;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+header h1 {
+    font-family: 'Songti', 'Playfair Display', serif;
+    color: #2c3e50;
+    font-weight: 900;
+    font-size: 2.5rem;
+    letter-spacing: 0.1rem;
+    text-shadow: none;
+    background: none;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: #2c3e50;
+    padding: 1.5rem;
+    border-radius: 0;
+    margin-bottom: 1.5rem;
+    position: relative;
+    background-color: transparent;
+    box-shadow: none;
+}
+
+header h1::before {
+    display: none;
+}
+
+/* Waterfall Layout */
+#quotes-container {
+    column-count: 4;
+    column-gap: 1.5rem;
+}
+
+@media (max-width: 1200px) {
+    #quotes-container {
+        column-count: 3;
+    }
+}
+
+@media (max-width: 900px) {
+    #quotes-container {
+        column-count: 2;
+    }
+}
+
+@media (max-width: 600px) {
+    #quotes-container {
+        column-count: 1;
+    }
+}
+
+/* Quote Card */
+.quote-card {
+    break-inside: avoid;
+    page-break-inside: avoid;
+    background: #F5F6F8 url('../pic/vector.png') no-repeat 20px 20px;
+    background-size: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    border: none;
+    padding: 1.75rem 1.5rem;
+    margin-bottom: 1.5rem;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.quote-card::before {
+    display: none;
+}
+
+.quote-card::after {
+    display: none;
+}
+
+/* Animation for card appearance */
+.quote-card.fade-in {
+    animation: fadeInUp 0.6s ease forwards;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.quote-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+
+.quote-text {
+    font-family: 'Songti', serif;
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+    color: #2c3e50;
+    position: relative;
+    padding-left: 0;
+    border-left: none;
+    font-weight: 900;
+    text-align: left;
+    letter-spacing: 0.05rem;
+}
+
+.quote-text::before, .quote-text::after {
+    display: none;
+}
+
+.quote-author-section {
+    display: flex;
+    align-items: center;
+    padding-top: 0.75rem;
+    border-top: none;
+    justify-content: flex-start;
+}
+
+.author-avatar {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 0.75rem;
+    box-shadow: none;
+    border: none;
+}
+
+.author-info {
+    display: flex;
+    flex-direction: column;  /* 改为垂直排列 */
+    align-items: flex-start; /* 左对齐 */
+    gap: 0.5rem;             /* 添加间距 */
+}
+
+.author-name {
+    font-weight: 700;
+    font-family: 'Songti', sans-serif;
+    color: #2c3e50;
+    margin-bottom: 0;
+    margin-right: 0;         /* 移除右边距 */
+}
+
+.quote-source {
+    font-size: 0.85rem;
+    font-family: 'Songti', sans-serif;
+    font-style: normal;
+    color: #7f8c8d;
+    font-weight: 400;
+    margin-left: 0;          /* 移除左边距 */
+}
