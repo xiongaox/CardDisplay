@@ -100,5 +100,17 @@ const quotesData = [
         author: "——",
         source: "——",
         avatar: "pic/avatar.jpg"
+    },
+    {
+        text: "八门旺衰口诀：同我为旺，生我为相，我生为休，我克为囚，克我为死",
+        author: "——",
+        source: "——",
+        avatar: "pic/avatar.jpg"
+    },
+    {
+        text: "九星旺衰口诀：我生为旺，同我为相，克我则囚，我克则休，生我为废",
+        author: "——",
+        source: "——",
+        avatar: "pic/avatar.jpg"
     }
 ];
