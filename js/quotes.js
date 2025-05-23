@@ -108,9 +108,9 @@ const quotesData = [
         avatar: "pic/avatar.jpg"
     },
     {
-        text: "九星旺衰口诀：我生为旺，同我为相，克我则囚，我克则休，生我为废",
-        author: "——",
-        source: "——",
+        text: "与我同行即为相，我生之月诚为旺。废于父母休于财，囚于鬼兮真不妄。",
+        author: "《烟波钓叟歌》",
+        source: "赵普",
         avatar: "pic/avatar.jpg"
     }
 ];
