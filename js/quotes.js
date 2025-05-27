@@ -24,12 +24,6 @@ const quotesData = [
         avatar: "pic/avatar.jpg"
     },
     {
-        text: "经曰：气乘风则散，界水则止。",
-        author: "郭璞",
-        source: "《葬经》",
-        avatar: "pic/avatar.jpg"
-    },
-    {
         text: "人受体于父母，本骸得气，遗体受荫。",
         author: "郭璞",
         source: "《葬经》",
@@ -111,6 +105,18 @@ const quotesData = [
         text: "与我同行即为相，我生之月诚为旺。废于父母休于财，囚于鬼兮真不妄。",
         author: "《烟波钓叟歌》",
         source: "赵普",
+        avatar: "pic/avatar.jpg"
+    },  
+    {
+        text: "药医不死病，佛度有缘人。",
+        author: "——",
+        source: "——",
+        avatar: "pic/avatar.jpg"
+    },  
+    {
+        text: "风水一定有影响，但是它的影响在你的命运之内",
+        author: "李双林",
+        source: "——",
         avatar: "pic/avatar.jpg"
     }
 ];
